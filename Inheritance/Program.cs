@@ -11,15 +11,25 @@ namespace Inheritance
             // Create a class Animal
             // give this class 4 members that all Animals have in common
 
+            var uromastyx = new Reptile();
+            uromastyx.Name = "Uromastyx";
+            uromastyx.ScaleType = "Spikes";
+            uromastyx.IsOmnivorous = false;
+            uromastyx.IsWarmBlooded = false;
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            var raven = new Bird();
+            raven.IsIntelligent = "Is one of the smartest birds in the world";
+            raven.IsPredator = true;
+            raven.Location = "lives in the arctic";
+            raven.Name = "Raven";
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
+            uromastyx.AboutReptile();
+            raven.AboutBird();
+            
 
+            
+
+            
 
 
 
